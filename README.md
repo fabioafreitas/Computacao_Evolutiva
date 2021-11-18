@@ -1,5 +1,23 @@
 # Computacao_Evolutiva
 
+Deixei alguns títulos sem acento para facilitar a navegação no table of contents
+
+## Table of contents
+
+- [Possíveis projetos](#possveis-projetos)
+- [Dúvidas](#duvidas)
+- [Aula 1 - Pericles](#aula-1---pericles)
+- [Aula 2 - Pericles](#aula-2---pericles)
+- [Aula 3 - Pericles](#aula-3---pericles)
+- [Aula 4 - Pericles](#aula-4---pericles)
+- [Aula 5 - Pericles](#aula-5---pericles)
+- [Aula 6 - Pericles](#aula-6---pericles)
+- [Aula 7 - Pericles](#aula-7---pericles)
+- [Aula 8 - Pericles](#aula-8---pericles)
+- [Aula 9 - Pericles](#aula-9---pericles)
+
+#
+
 ## Possíveis projetos:
 - Melhorar Artigo OD: 
 	* Modelagem, pois tenho entradas e as saídas, e quero um modelo que generaliza esta relação
@@ -11,7 +29,9 @@
 	* Preciso gerar uma base de dados anotada para este propósito ou achar na internet.
 	* Problema inicialmente a ser avaliado com o sensor de pH (ph4502c)
 
-## Dúvidas:
+#
+
+## Duvidas:
 
 * como o algoritmo evolucionário se relaciona com problemas de modelagem? Ao meu ver
 ele é diretamente ligado às entradas, ou seja, os inputs utilizados num dado modelo
@@ -19,7 +39,7 @@ ele é diretamente ligado às entradas, ou seja, os inputs utilizados num dado m
 
 # 
 
-## Aula 1 - Péricles
+## Aula 1 - Pericles
 
 Entrada -> Modelo -> Saída
 
@@ -39,7 +59,7 @@ função objetivo:	forma de quantificar o valor de um objeto de interesse
 gene: 	é o vetor de caracteristica do indivíduo
 alelo:	posições do vetor de característica do indivíduo
 
-## Aula 2 - Péricles
+## Aula 2 - Pericles
 
 ![](./assets/fluxograma.png)
 
@@ -47,7 +67,7 @@ cruzamento:	envolve a recombinação do gene de 2 indivíduos pais
 
 mutação: 	envolve a modificação aleatoria de alelos de um indivíduo
 
-## Aula 3 - Péricles
+## Aula 3 - Pericles
 
 **Exploration**: (horizontal) utilizando todo o espaço de busca.
 
@@ -117,11 +137,11 @@ mutação: 	envolve a modificação aleatoria de alelos de um indivíduo
 
 
 * Cruzamento (recombinação): 
-    - Parttially Mapped Crossover (PMX): Ver a explicação no aula 4 de péricles.
+    - Parttially Mapped Crossover (PMX): Ver a explicação no aula 4 de pericles.
 
         ![](./assets/pmx.png)
 
-## Aula 4 - Péricles
+## Aula 4 - Pericles
 
 > μ (mi) - população inicial
 
@@ -162,6 +182,37 @@ A seleção dos pais, que serviu para selecionar os individuos que se reproduzir
 
 - **Mecanismos baseados no fitness**: mais utilizada, seleciona-se com base no fitness. Abordagem elitista.
 
-## Aula 5 - Péricles 
+## Aula 5 - Pericles 
 
-Otimização do GA Sphere e Awkley
+Otimização do [GA Sphere](./Atividades/ga_sphere/ga_sphere.ipynb) e [Ackley](./Atividades/ackley/ackley.ipynb)
+
+## Aula 6 - Pericles 
+
+### Algoritmos Genéticos
+
+eaSimple implementa o algoritmo genético proposto por Holland.
+
+Fluxo natural do algoritmo genérico:
+1. Dada uma população de **μ** indivíduos, a seleção de pais preenche um conjunto intermediário de tamanho **μ**, permitindo duplicatas;
+2. A população intermediária é embaralhada para criar pares aleatórios para serem usados na recombinação;
+3. A recombinação é aplicada à cada par de indivíduos com probabilidade Pc e os filhos substituem os pais imediatamente;
+4. A população intermediária passa pelo processo de mutação, indivíduo à indivíduo (cada bit de cada indivíduo é modificado com probabilidade pm);
+5. A população intermediária substitui a anterior completamente.
+
+Algorimtos genéticos recentes mostram desvantagens nos mais antigos:
+- Ausência do conceito de elistismo
+- Seleção de pais baseado em fitness (fitness x ranking)
+- Modelo de substituição muito simples
+- Representação binária não adequada para vários problemas
+ 
+### Estratégias Evolucionárias
+
+- EE(1+1): Conhecido como Plus,  o pai só é substituido se o filho for melhor
+- EE(1,1): Conhecido como comma, o pai sempre é substituido pelo filho.
+
+
+## Aula 7 - Pericles 
+
+## Aula 8 - Pericles 
+
+## Aula 9 - Pericles 
