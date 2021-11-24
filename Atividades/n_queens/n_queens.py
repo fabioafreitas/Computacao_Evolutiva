@@ -10,7 +10,7 @@ from deap import tools
 import matplotlib.pyplot as plt
 
 #Problem parameter
-NB_QUEENS = 8
+NB_QUEENS = 40
 
 def evalNQueens(individual):
     """Evaluation function for the n-queens problem.
